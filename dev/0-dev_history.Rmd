@@ -5,26 +5,20 @@ editor_options:
   chunk_output_type: console
 ---
 
-All commands that you use to use when developing packages...
-
-# First time just after creating the project
-
-- Fill the following chunk to create the DESCRIPTION of your package
-
 ```{r description}
 # Describe your package
 fusen::fill_description(
   pkg = here::here(),
   fields = list(
-    Title = "Build A Package From Rmarkdown File",
-    Description = "Use Rmarkdown First method to build your package. Start your package with documentation. Everything can be set from a Rmarkdown file in your project.",
+    Title = "FADvisor",
+    Description = "This R package provides a suite of functions designed to generate key indicators for Fish Aggregating Devices (FADs). It simplifies the process of analyzing FAD-related data, offering insights into their usage, environmental impact, and overall performance. Ideal for researchers and environmentalists focused on sustainable fishing practices.",
     `Authors@R` = c(
-      person("John", "Doe", email = "john@email.me", role = c("aut", "cre"), comment = c(ORCID = "0000-0000-0000-0000"))
+      person("Taha", "Imzilen", email = "imzilen.taha@gmail.fr", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-8257-9113"))
     )
   )
 )
 # Define License with use_*_license()
-usethis::use_mit_license("John Doe")
+usethis::use_gpl_license(version = 3, include_future = TRUE)
 ```
 
 # All-in-one function to deploy publicly on GitHub
